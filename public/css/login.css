@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-page {
+    display: flex;
+}
+
+.carosel-section,
+.auth-section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.carosel-section {
+    background-color: #EBEBEB;
+    height: 100vh;
+}
+
+.carosel-section p {
+    padding-inline: 4rem;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.auth-section form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.auth-section form label {
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.auth-section form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    padding: 0.25rem 0rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+}
+
+#eye {
+    position: absolute;
+    width: 1.8rem;
+    height: 1.8rem;
+    padding: 0.3rem 0rem;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.input-container input {
+    border: none;
+    outline: none;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.btn-connecter {
+    padding: 0.75rem 0;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#form-header {
+    font-weight: 700;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+#oublie-mot-passe {
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 0.4rem 0rem;
+    cursor: pointer;
+}
+
+#switch-signup,
+#switch-login {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.4rem 0rem;
+    cursor: pointer;
+    text-align: center !important;
+}
+
+#switch-login a,
+#switch-signup a {
+    text-decoration: none;
+    color: #777;
+}
+
+#social-media {
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.4rem 0rem;
+    text-align: center;
+}
+
+.auth-section .buttom-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.buttom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0rem;
+}
+
+.icon {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+hr {
+    width: 80px;
+    border: 2px solid #777;
+}
+
+@media (max-width : 640px) {
+    .login-page {
+        flex-direction: column;
+        gap: 1.25rem;
+        padding: 1.25rem 0rem;
+    }
+
+    .carosel-section,
+    .auth-section {
+        width: 100%;
+    }
+
+    .carosel-section {
+        height: 50%;
+        padding: 1rem 0 rem;
+    }
+
+    .carosel-section img {
+        max-width: 80%;
+        object-fit: fill;
+    }
+
+    .auth-section form {
+        width: 80%;
+    }
+
+    #form-header {
+        font-size: 1.2rem;
+    }
+}
