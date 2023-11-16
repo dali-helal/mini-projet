@@ -1,0 +1,109 @@
+.devis {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 5rem;
+  gap: 1rem;
+}
+
+.devis h2 {
+  color: #4CAF4F;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.devis p {
+  font-size: 0.9rem;
+  color: #9C9C9CD6;
+}
+
+.devis-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0px 0px 10px 0px #00000040;
+  padding: 0.45rem;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+
+.card-info h2 {
+  color: black;
+  font-size: 1rem;
+  font-family: 600;
+}
+
+.card-info p {
+  font-size: 0.7rem;
+  color: #9C9C9CD6;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#cardInfo {
+  font-size: 0.8rem;
+  font-family: 700;
+}
+
+.card-btn {
+  display: flex;
+  cursor: pointer;
+  padding: 0.45rem 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  background-color: #4CAF4F;
+  color: white;
+  border-radius: 8px;
+}
+
+@media (max-width : 640px) {
+  .devis {
+    padding: 2rem;
+  }
+
+  .card-image img {
+    width: 100%;
+  }
+
+  .devis-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .card-info {
+    align-items: center;
+    padding: 0.25rem;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #cardInfo {
+    font-size: 0.8rem;
+    font-family: 700;
+  }
+}
