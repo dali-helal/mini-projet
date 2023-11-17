@@ -13,9 +13,21 @@ btnSignup.addEventListener('click', (e: Event) => {
     return false;
   }
 
-  if (password.value.length < 8) {0
+  if (password.value.length < 8) {
+    0
     validation.textContent = "Le mot de passe doit contenir au moins 8 caractères"
     return false;
   }
   window.location.href = "index.html";
 })
+
+
+function toggleMobileNav(): void {
+  const mobileNav = document.querySelector(".mobile-nav") as HTMLElement;
+  const bars = document.querySelector(".bars") as HTMLElement;
+  const blurScreen = document.querySelector(".blur-screen") as HTMLElement;
+
+  mobileNav.classList.toggle("open");
+  bars.classList.toggle("clicked");
+  blurScreen.classList.toggle("change");
+}

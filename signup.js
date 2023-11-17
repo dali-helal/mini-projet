@@ -12,8 +12,17 @@ btnSignup.addEventListener('click', (e) => {
         return false;
     }
     if (password.value.length < 8) {
+        0;
         validation.textContent = "Le mot de passe doit contenir au moins 8 caractères";
         return false;
     }
     window.location.href = "index.html";
 });
+function toggleMobileNav() {
+    const mobileNav = document.querySelector(".mobile-nav");
+    const bars = document.querySelector(".bars");
+    const blurScreen = document.querySelector(".blur-screen");
+    mobileNav.classList.toggle("open");
+    bars.classList.toggle("clicked");
+    blurScreen.classList.toggle("change");
+}

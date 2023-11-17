@@ -8,6 +8,7 @@
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   background-color: #f4f4f4;
+  user-select: none;
 }
 
 nav {
@@ -274,9 +275,107 @@ footer div .input-textArea .send {
   background-color: transparent !important;
 }
 
+.nav-mobile {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  position: sticky;
+  top: 0rem;
+  z-index: 100;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.bars {
+  display: none;
+}
+
+.blur-screen {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  transition: 0.4s;
+  z-index: 222;
+  visibility: hidden;
+}
+
+.change {
+  background-color: black;
+  opacity: 0.3;
+}
+
+
 @media (max-width : 640px) {
   nav {
     display: none;
+  }
+
+  .mobile-nav.open {
+    width: 40%;
+  }
+
+  .bars.clicked .bar {
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+
+  .bars.clicked .bar:first-of-type {
+    transform: rotate(45deg);
+  }
+
+  .bars.clicked .bar:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .bars.clicked .bar:last-of-type {
+    transform: rotate(-45deg);
+  }
+
+  .mobile-nav {
+    position: fixed;
+    background: #4CAF4F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 0%;
+    right: 0px;
+    top: 0px;
+    flex-direction: column;
+    transition: 0.4s;
+    z-index: 1000;
+    overflow: hidden;
+  }
+
+  .mobile-nav a {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: #4CAF4F;
+  }
+  .bars {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 20px;
+    width: 25px;
+    z-index: 1010;
+    position: relative;
+    transition: .5s;
+  }
+  .bars .bar {
+    background: black;
+    width: 100%;
+    height: 4px;
+    border-radius: 50px;
+    transition: .5s;
+    background-color: #4CAF4F;
   }
 
   header {

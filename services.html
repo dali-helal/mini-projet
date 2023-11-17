@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Services</title>
   <link rel="stylesheet" href="./css/home.css" />
   <link rel="stylesheet" href="./css/service.css" />
 </head>
@@ -23,6 +23,21 @@
 
     <span><img src="./images/Devis Online.png" style="cursor: pointer; height: 22px; width: 22px;" /></span>
   </nav>
+  <div class="nav-mobile">
+    <div class="mobile-nav">
+      <a href="home.html">Acceuil</a>
+      <a href="services.html">Services</a>
+      <a href="realisation.html">Realisation</a>
+      <a href="devis.html">Devis On ligne</a>
+
+    </div>
+    <div class="bars" onClick="toggleMobileNav()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <div class="blur-screen"></div>
+  </div>
 
   <section class="service">
     <div class="left-section">
@@ -50,10 +65,6 @@
     </div>
 
   </section>
-
-
-
-
 
   <section id="devis">
     <h2>Obtenez Votre Devis en ligne !</h2>
@@ -124,6 +135,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="signup.js"></script>
 </body>
 
 </html>
