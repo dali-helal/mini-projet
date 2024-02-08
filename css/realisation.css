@@ -1,0 +1,67 @@
+.realisation {
+  display: flex;
+  align-items: center;
+  padding: 2rem 5rem;
+  gap: 1rem;
+}
+
+#commentes {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 5rem;
+  gap: 1rem;
+}
+
+#commentes h2 {
+  color: #4CAF4F;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+#commentes div {
+  display: flex;
+  gap: 1.5rem;
+}
+
+#commente {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px 0px #00000040;
+  border-radius: 8px;
+  padding: 0.4rem;
+}
+
+#commente p {
+  font-size: 0.6rem;
+  font-weight: 500;
+}
+
+#commente span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width : 640px) {
+  .realisation {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  #commentes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  #commentes div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

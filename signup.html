@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/signup.css">
+    <title>signup page</title>
+</head>
+
+<body>
+    <div class="signup-page">
+        <section class="carosel-section">
+            <img src="./images/Mobile.png" alt="" />
+            <p>Lorem ipsum dolor sit amet consectetur </p>
+        </section>
+        <section class="signup-section">
+            <span id="form-header">Créez votre compte !</span>
+            <form>
+                <label for="nom">Nom</label>
+                <div class="input-container">
+                    <input type="text" id="nom" placeholder="votre nom">
+                </div>
+                <label for="prenom">Prenom</label>
+                <div class="input-container">
+                    <input type="text" id="prenom" placeholder="votre Prenom">
+                </div>
+                <label for="telephone">Numero telephone</label>
+                <div class="input-container">
+                    <input type="number" id="telephone" placeholder="+216 52886446">
+                </div>
+                <label for="input-password">Mot de Passe</label>
+                <div class="input-container">
+                    <input type="password" id="input-password" placeholder="mot de pasee">
+                    <img src="./images/hidden.ico" id="eye" alt="" />
+                </div>
+                <span id="validation"></span>
+                <div class="list-label">
+                    <label style="width: 50%;">Localisation</label>
+                    <label>Code Postal</label>
+                </div>
+                <div class="select-container">
+                    <div class="list-options">
+                        <select>
+                            <option>Select option</option>
+                            <option value="">Mednine</option>
+                            <option value="">Monastir</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <input type="number" id="code-postal" placeholder="4215">
+                    </div>
+                </div>
+                <button class="engistrer-btn">S'inscrire</button>
+            </form>
+            <div class="buttom-container">
+                <span id="switch-login">Vous avez déja un compte? &nbsp; &nbsp; <a href="index.html">Sign In</a></span>
+                <span style="display: flex; align-items: center; gap: 0.75rem;">
+                    <hr><span id="social-media">Ou Connectez avec </span>
+                    <hr>
+                </span>
+                <div class="icons-list">
+                    <img src="./images/Facebook-logo-2019.ico" alt="" class="icon" />
+                    <img src="./images/google-icon-2048x2048-czn3g8x8.ico" alt="" class="icon" />
+                    <img src="./images/twitter.ico" alt="" class="icon" />
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="signup.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

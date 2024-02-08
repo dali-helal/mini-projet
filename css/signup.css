@@ -1,0 +1,120 @@
+.signup-page {
+    display: flex;
+    height: 100vh;
+}
+
+.signup-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.signup-section form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.signup-section form label {
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.signup-section form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-label {
+    display: flex;
+    flex-direction: row !important;
+    gap: 1.8rem;
+}
+
+.select-container {
+    display: flex;
+    flex-direction: row !important;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.select-container .list-options {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem 0rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+}
+
+.select-container .list-options::after {
+    content: "▼";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+}
+
+.select-container .list-options select {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    appearance: none;
+    background: transparent;
+}
+
+.engistrer-btn {
+    padding: 0.75rem 0;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#validation {
+    font-size: 0.6rem;
+    color: red;
+    font-weight: 600;
+    /*display: none;*/
+}
+
+@media (max-width : 640px) {
+    .signup-page {
+        flex-direction: column;
+        gap: 1.25rem;
+        padding: 1.25rem 0rem;
+    }
+
+    .carosel-section,
+    .signup-section {
+        width: 100%;
+    }
+
+    .carosel-section {
+        height: 50%;
+        padding: 1rem 0 rem;
+    }
+
+    .carosel-section img {
+        max-width: 80%;
+        object-fit: fill;
+    }
+
+    .signup-section form {
+        width: 80%;
+    }
+
+    #form-header {
+        font-size: 1.2rem;
+    }
+}
